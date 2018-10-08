@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class ="row" id='data-table'>
+        <div class="col col-md-12 col-sm-12">
+            <h1 id='data-h1'>Data </h1>
+            <br>
+            <p>Following table used for plotting all the graphs for this assignment</p>
+        </div>
+    </div>
+    <div class ="row" id='data-table'>
+        <div class="col col-md-12 col-sm-12">
+            <div class="table-responsive">
+                <table class="table table-hover  table-striped table-bordered">
+                    <tbody>
+                            <tr>
+                                {{data | safe}}
+                            </tr>
+                    </tbody>
+                </thead>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

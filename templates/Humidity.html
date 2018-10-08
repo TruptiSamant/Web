@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container" id="comparison-div">
+    <div class ="row">
+      <div class="col col-lg-12 col-md-12 col-sm-12">
+          <h1>Humidity </h1>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col col-lg-12 col-md-12 col-sm-12">
+              <!-- <h1>vs Temperature </h1> -->
+                    {{hum_div|safe}}
+                    <!-- {{div_placeholder1|safe}} -->
+        </div>
+    </div>
+</div>
+
+{% endblock %}

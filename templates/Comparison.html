@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container" id="comparison-div">
+    <div class ="row" >
+      <div class="col col-lg-12 col-md-12 col-sm-12">
+          <h1>Comparison:Latitude vs X </h1>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 50px;">
+        <div class="col col-lg-6 col-md-12 col-sm-12">
+              <!-- <h1>vs Temperature </h1> -->
+                    {{temp_div|safe}}
+                    <!-- {{div_placeholder1|safe}} -->
+        </div>
+        <div class="col col-lg-6 col-md-12 col-sm-12">
+              <!-- <h1>vs Humidity </h1> -->
+                    {{hum_div|safe}}
+        </div>
+        <div class="col col-lg-6 col-md-12 col-sm-12">
+              <!-- <h1>vs Cloudiness </h1> -->
+                    {{cloud_div|safe}}
+        </div>
+        <div class="col col-lg-6 col-md-12 col-sm-12">
+              <!-- <h1>vs Windspeed </h1> -->
+                    {{wind_div|safe}}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,193 @@
+
+body {
+    background-color: lightgray;
+      height: 100%;
+}
+
+
+    .h1, h1{
+        color: #5ab8bd;
+        padding: 20px;
+        text-align: center;
+    }
+
+#logo {
+   background:#0BADA6 ;
+   color:white;
+   font-family: Georgia, Times, "Times New Roman", serif;
+   font-size: 24px
+}
+
+.images img{
+height: auto;
+width: auto;
+}
+
+#chart{
+    margin: 0 ;
+      border: 1px solid black;
+      height: 50vh;
+      width: 50vh;
+      /* min-height: 300px; */
+      overflow-x: auto;
+}
+#chart-div
+{
+    float: left;
+    min-width: 60%;
+    margin: 10px;
+}
+
+#chart-latitude-div {
+    float: left;
+    min-width: 40%;
+    margin: 10px;
+}
+#chart-latitude, #temp-latitude, #hum-latitude {
+    margin: 0;
+    border: 1px solid black;
+    height: 35vh;
+    width: 50vh;
+    max-height: 300px;
+    overflow-x: auto;
+}
+
+.plot-container plotly
+{
+    margin: 0 ;
+      border: 1px solid black;
+      height: 50vh;
+      width: 50vh;
+      /* min-height: 300px; */
+      overflow-x: auto;
+
+}
+
+#description-image{
+float: left;
+height: 200px;
+width: 200px;
+/*margin-top: 20px;
+margin-right: 20px;*/
+}
+.comparison-images img{
+   height: 400px;
+   width: 400px;
+  }
+
+  .description-content
+  {
+      padding: 20px;
+      background-color: white;
+      margin: 15px;
+  }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    /* .row.content {height: 1500px} */
+
+    /* Set gray background color and 100% height */
+   .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      position:fixed;
+      bottom:0;
+    width: 100%;
+    }
+
+    .img-fluid{
+        max-width: 100%;
+        height: auto;
+
+    }
+
+
+ /* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 990px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+
+      #chart{
+          margin: 0 auto;
+            border: 1px solid black;
+            height: 300px;
+            width: auto;
+            /* min-height: 300px; */
+      }
+      #chart-div
+      {
+          /* float: left; */
+          /* min-width: 50%; */
+          margin: 20px;
+          width: 100%;
+          margin-left: 0px;
+
+      }
+    }
+
+/*Comparison HTML */
+#comp-chart-div {
+    /* float: left; */
+    min-width: 60%;
+    margin: 10px;
+}
+
+#comparison-div {
+    background-color: white;
+}
+
+
+/* Data html */
+/* body            { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+a, h1, h2       { color: #377ba8; }
+h1, h2          { margin: 0; }
+h1              { border-bottom: 2px solid #eee; }
+h2              { font-size: 1.2em; } */
+.data-h1, h1 {
+    color: #5ab8bd;
+    padding: 20px;
+    text-align: left;
+}
+
+ table.dataframe, .dataframe th, .dataframe td {
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  border-collapse: collapse;
+  text-align:left;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#data-table{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    /* color: wheat; */
+    background: white;
+}
+
+
+
+/* tr:nth-child(odd)		{ background-color:#eee; } */
+/* tr:nth-child(even)	{ background-color:#fff; } */
+
+tr:hover            { background-color: #ffff99;}
