@@ -16,16 +16,24 @@
          </article>
           </div>
       <div class="col col-md-4 col-sm-12">
-          <article class="description-content">
+          <article  id = "landing-viz">
               <h1>Visualizations </h1>
-                  <div class="row">
+                  <div class="row" >
                       <div class="col col-md-6">
-                          <img src="{{url_for('static', filename='assets/images/Fig1.png')}}" class="img-fluid" alt="max temp Image">
-                          <img src="{{url_for('static', filename='assets/images/Fig2.png')}}" class="img-fluid" alt="max temp Image">
+                          <a href="{{url_for('temperature')}}">
+                              <img src="{{url_for('static', filename='assets/images/Fig1.png')}}" class="img-fluid" alt="max temp Image">
+                          </a>
+                          <a href="{{url_for('humidity')}}">
+                              <img src="{{url_for('static', filename='assets/images/Fig2.png')}}" class="img-fluid" alt="max temp Image">
+                          </a>
                       </div>
                       <div class="col col-md-6">
+                        <a href="{{url_for('cloudiness')}}">
                             <img src="{{url_for('static', filename='assets/images/Fig3.png')}}" class="img-fluid" alt="max temp Image">
+                        </a>
+                        <a href="{{url_for('WindSpeed')}}">
                             <img src="{{url_for('static', filename='assets/images/Fig4.png')}}" class="img-fluid" alt="max temp Image">
+                        </a>
                       </div>
               </div>
           </article>
